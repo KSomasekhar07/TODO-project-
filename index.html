@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <div class="current-datetime">
+            <div id="current-date"></div>
+            <div id="current-time"></div>
+        </div>
+        <div class="todo-input">
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <input type="datetime-local" id="due-date-input">
+            <button id="add-button">Add</button>
+        </div>
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+        <div class="stats">
+            <span id="total-tasks">Total: 0</span>
+            <span id="completed-tasks">Completed: 0</span>
+        </div>
+        <ul id="todo-list">
+            <!-- Todo items will be added here dynamically -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
